@@ -1,4 +1,4 @@
-package client;
+package demo.client;
 import java.io.*;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
