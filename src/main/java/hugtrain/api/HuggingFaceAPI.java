@@ -41,8 +41,7 @@ public class HuggingFaceAPI {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(API_URL))
-               // .header("Authorization", "Bearer " + appConfig.getApiKey())
-                .header("Authorization", "Bearer " +"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")
+                .header("Authorization", "Bearer " + appConfig.getApiKey())
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(jsonInput))
                 .build();
